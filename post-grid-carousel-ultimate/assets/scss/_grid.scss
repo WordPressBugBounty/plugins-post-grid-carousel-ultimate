@@ -1,0 +1,92 @@
+/* pgcu grid */
+.pgcu-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-top: -25px;
+    min-width: 100%;
+}
+
+.pgcu-row>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+
+/* pgcu columns */
+.pgcu-column-1 .pgcu-post {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.pgcu-column-2 .pgcu-post {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.pgcu-column-3 .pgcu-post {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+}
+
+.pgcu-column-4 .pgcu-post {
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+.pgcu-column-5 .pgcu-post {
+    flex: 0 0 20%;
+    width: 20%;
+}
+
+
+/* columns in mobile and tablet */
+@media only screen and (max-width: 991px) {
+    .pgcu-column-md-1 .pgcu-post {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    .pgcu-column-md-2 .pgcu-post {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .pgcu-column-md-3 .pgcu-post {
+        flex: 0 0 33.33%;
+        width: 33.33%;
+    }
+
+    .pgcu-column-md-4 .pgcu-post {
+        flex: 0 0 25%;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pgcu-column-sm-1 .pgcu-post {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+    }
+
+    .pgcu-column-sm-2 .pgcu-post {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .pgcu-column-sm-3 .pgcu-post {
+        flex: 0 0 33.33%;
+        width: 33.33%;
+    }
+
+    .pgcu-column-sm-4 .pgcu-post {
+        flex: 0 0 25%;
+        width: 25%;
+        display: flex;
+    }
+}

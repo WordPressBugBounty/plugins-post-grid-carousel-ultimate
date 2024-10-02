@@ -1,0 +1,317 @@
+/*===========================
+ Style: Components
+===========================*/
+/* Post title */
+.pgcu-post__title{
+    margin: 0 !important;
+    font-size: unset;
+    line-height: 1.2;
+    &:before,
+    &:after{
+        content: none;
+    }
+    a{
+        font-size: var(--pgcu-titleFontSize);
+        color: var(--pgcu-titleColor) !important;
+        transition: 0.3s ease;
+        text-decoration: none !important;
+        border: 0 none !important;
+        line-height: inherit;
+        &:hover{
+            color: var(--pgcu-titleColorHover) !important;
+        }
+    }
+}
+
+/* Post Meta */
+.pgcu-post__meta{
+    margin: 0 -11px !important;
+    padding: 0 !important;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    li{
+        list-style-type: none;
+        margin: 0 !important;
+        padding: 0 11px !important;
+        a{
+            text-decoration: none !important;
+            font-size: 14px;
+            color: var(--pgcu-metaColor) !important;
+            display: block;
+            transition: 0.3s ease;
+            &:hover{
+                color: var(--pgcu-metaColorHover) !important;
+            }
+
+        }
+    }
+    @include m(dots){
+        li:not(:last-child){
+            position: relative;
+            &:after{
+                content:"";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: var(--pgcu-textLight);
+            }
+
+        }
+    }
+    @include m(has-icon){
+        margin: 0 -10px !important;
+        position: relative;
+        li{
+            padding: 0 10px;
+            span{
+                font-size: 14px;
+                color: var(--pgcu-metaColor) !important;
+                display: block;
+            }
+            div{
+                display: flex;
+                align-items: center;
+            }
+            svg{
+                width: 14px;
+                height: 14px;
+                fill: var(--pgcu-metaColor) !important;
+                margin-right: 8px;
+            }
+        }
+    }
+    @include e(share){
+        position: relative;
+        @include e(dropdown){
+            position: absolute;
+            width: 130px;
+            left: auto;
+            right: -15px;
+            top: 40px;
+            box-shadow: 0 0 15px rgba(3,2,19,0.1);
+            padding: 15px;
+            background: #fff;
+            justify-content: center;
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.3s ease;
+            z-index: 2;
+            a{
+                display: block;
+                margin: 0 7px;
+                text-decoration: none !important;
+                transition: 0.3s ease;
+                flex: none;
+                line-height: 1;
+                svg{
+                    margin-right: 0;
+                }
+                &:hover{
+                    svg{
+                        fill: var(--pgcu-metaColorHover) !important;
+                    }
+                }
+            }
+        }
+        &:before{
+            content:"";
+            width: 100%;
+            position: absolute;
+            height: 10px;
+            left: 0;
+            bottom: -12px;
+        }
+        &:hover{
+            cursor: pointer;
+            .pgcu-post__meta__share__icon{
+                svg{
+                    fill: var(--pgcu-metaColorHover) !important;
+                }
+                span{
+                    color: var(--pgcu-metaColorHover) !important;
+                }
+            }
+            .pgcu-post__meta__share__dropdown{
+                top: 26px;
+                visibility: visible;
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+    @include e(categories){
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -3px !important;
+        > a{
+            margin: 3px;
+            text-decoration: none !important;
+            &:first-child:after{
+                content: ',';
+            }
+            &:last-child:after{
+                content: none;
+            }
+        }
+    }
+    @include e(categories-more){
+        line-height: 0.5;
+        position: relative;
+        span{
+            display: block;
+            margin-left: 4px;
+            cursor: pointer;
+            svg{
+                width: 9px;
+                height: 9px;
+                fill: var(--pgcu-textLight);
+                transition: 0.3s ease;
+            }
+        }
+        div{
+            visibility: hidden;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            right: -12px;
+            bottom: calc(100% + 10px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+            min-width: 100px;
+            &:before{
+                position: absolute;
+                content: '';
+                border-right: 7px solid transparent;
+                border-left: 7px solid transparent;
+                border-top: 9px solid #fff;
+                right: 10px;
+                bottom: -9px;
+            }
+            &:after{
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 15px;
+                left: 0;
+                bottom: -13px;
+                background: transparent;
+            }
+            a{
+                display: block;
+                line-height: 1;
+                text-decoration: none !important;
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &:hover{
+            span svg{
+                fill: var(--pgcu-primaryColor);
+            }
+            span + div{
+                visibility: visible;
+                opacity: 1;
+                pointer-events: all;
+            }
+        }
+    }
+}
+
+/* Post Excerpt */
+.pgcu-post__excerpt{
+    color: var(--pgcu-excerptColor) !important;
+    font-size: var(--pgcu-excerptFontSize);
+    line-height: 1.625;
+    margin: 0;
+}
+
+/* Buttons */
+.pgcu-button{
+    background: var(--pgcu-buttonBg) !important;
+    color: var(--pgcu-buttonColor) !important;
+    font-size: var(--pgcu-buttonFontSize);
+    font-weight: 500;
+    height: 38px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    line-height: 1;
+    &:hover{
+        background: var(--pgcu-buttonBgHover) !important;
+        color: var(--pgcu-buttonColorHover) !important;
+    }
+    @include m(rounded){
+        border-radius: 4px;
+    }
+    @include m(loading){
+        position: relative;
+        &:after{
+            content:"";
+            position: absolute;
+        }
+    }
+    @include m(active){
+        background: var(--pgcu-buttonBgHover) !important;
+        color: var(--pgcu-buttonColorHover) !important;
+    }
+}
+
+/* Read more link */
+.pgcu-post__readmore{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--pgcu-readMoreColor) !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+    svg{
+        width: 11px;
+        height: 13px;
+        margin-left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease;
+        fill: var(--pgcu-readMoreColor);
+    }
+    &:hover{
+        color: var(--pgcu-readMoreColorHover) !important;
+        text-decoration: underline !important;
+        svg{
+            margin-left: 7px;
+            visibility: visible;
+            opacity: 1;
+            fill: var(--pgcu-readMoreColorHover);
+        }
+    }
+}
+
+/* Badges */
+.pgcu-post__badge{
+    border-radius: 3px;
+    background: var(--pgcu-badgeBg) !important;
+    color: var(--pgcu-badgeColor) !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 500;
+    height: 22px;
+    border-radius: 3px;
+    padding: 0 4px;
+    line-height: 24px;
+    display: inline-block;
+}

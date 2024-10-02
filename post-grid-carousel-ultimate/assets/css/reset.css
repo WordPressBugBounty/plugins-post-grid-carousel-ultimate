@@ -1,0 +1,92 @@
+
+.pgcu_container h1,
+.pgcu_container h2,
+.pgcu_container h3,
+.pgcu_container h4,
+.pgcu_container h5,
+.pgcu_container h6,
+.pgcu_container p {
+  margin: 0;
+  padding: 0;
+}
+
+.pgcu_container h1,
+.pgcu_container h2,
+.pgcu_container h3,
+.pgcu_container h4,
+.pgcu_container h5,
+.pgcu_container h6 {
+  color: #363940;
+}
+
+.pgcu_container p {
+  color: #6e7387;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+
+.pgcu_container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pgcu_container li {
+  list-style: none;
+}
+
+.pgcu_container a {
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pgcu_container p {
+  margin-bottom: 15px;
+}
+
+.pgcu_post .post_title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  line-height: 26px;
+}
+
+
+.pgcu_container a.btn:hover {
+  background: #f42156;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  .pgcu_container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pgcu_container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pgcu_container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pgcu_container {
+    max-width: 1140px;
+  }
+}
+
+
+
+/*# sourceMappingURL=maps/reset.css.map */

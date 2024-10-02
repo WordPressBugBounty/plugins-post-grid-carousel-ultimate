@@ -1,0 +1,22 @@
+/*
+    Plugin: Post Grid Carousel Ultimate
+    Plugin URI: https://wordpress.org/plugins/post-grid-carousel-ultimate/
+    Author: wpWax
+    Version: 2.0
+*/
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+//Configurable scss files
+@import "./config";
+@import "./general";
+@import "./grid";
+@import "./keyframes";
+@import "./components";
+@import "./utilities";
+@import "./pagination";
+//Grid styles
+@import "./themes/theme-one";
+@import "./themes/theme-two";
+@import "./themes/theme-three";
+@import "./themes/theme-four";

@@ -1,0 +1,75 @@
+/*===========================
+ Pagination styles
+===========================*/
+.pgcu-pagination .pagination {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    width: 100%;
+    max-width: 100%;
+}
+
+.pgcu-pagination .pagination .nav-links {
+    margin: 25px -5px -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pgcu-pagination.pgcu-pagination--left .pagination .nav-links {
+    justify-content: flex-start;
+}
+
+.pgcu-pagination.pgcu-pagination--right .pagination .nav-links {
+    justify-content: flex-end;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers {
+    color: var(--pgcu-pagColor) !important;
+    margin: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid var(--pgcu-pagBorderColor) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: var(--pgcu-pagBgColor) !important;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    min-height: 34px;
+    border-radius: 4px !important;
+    transition: 0.3s ease;
+    &:before,
+    &:after{
+        content: none;
+    }
+    &.prev,
+    &.next{
+        position: static;
+    }
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers svg {
+    fill: var(--pgcu-pagColor) !important;
+    transition: 0.3s ease;
+    width: 12px;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers:hover svg {
+    fill: var(--pgcu-pagColorHover) !important;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers:hover {
+    background: var(--pgcu-pagBgColorHover) !important;
+    border-color: var(--pgcu-pagBorderColorHover) !important;
+    color: var(--pgcu-pagColorHover) !important;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers.current {
+    background: var(--pgcu-pagActiveBgColor) !important;
+    border-color: var(--pgcu-pagActiveBorderColor) !important;
+    color: var(--pgcu-pagActiveColor) !important;
+    box-shadow: none !important;
+}

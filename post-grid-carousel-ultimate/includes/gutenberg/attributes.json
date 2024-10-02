@@ -1,0 +1,143 @@
+{
+  "layout":{
+    "type":"string",
+    "default":"carousel"
+  },
+  "theme":{
+    "type":"string",
+    "default":"theme-1"
+  },
+  "display_header_title":{
+    "type":"boolean",
+    "default":false
+  },
+  "header_title":{
+    "type":"string",
+    "default": ""
+  },
+  "header_position":{
+    "type":"string",
+    "default": "middle"
+  },
+  "display_title":{
+    "type":"boolean",
+    "default": true
+  },
+  "post_from":{
+    "type":"string",
+    "default": "latest"
+  },
+  "total_posts":{
+    "type":"string",
+    "default": "12"
+  },
+  "display_content":{
+    "type":"boolean",
+    "default": true
+  },
+  "content_word_limit":{
+    "type":"string",
+    "default": "16"
+  },
+  "display_read_more":{
+    "type":"boolean",
+    "default": true
+  },
+  "read_more_type":{
+    "type":"string",
+    "default": "link"
+  },
+  "display_author":{
+    "type":"boolean",
+    "default": true
+  },
+  "display_date":{
+    "type":"boolean",
+    "default": true
+  },
+  "display_term":{
+    "type":"boolean",
+    "default": true
+  },
+  "term_from":{
+    "type":"string",
+    "default": "category"
+  },
+  "autoplay":{
+    "type":"boolean",
+    "default": true
+  },
+  "repeat_post":{
+    "type":"boolean",
+    "default": true
+  },
+  "pause_hover":{
+    "type":"boolean",
+    "default": false
+  },
+  "post_column":{
+    "type":"string",
+    "default": "2"
+  },
+  "post_column_laptop":{
+    "type":"string",
+    "default": "2"
+  },
+  "post_column_tablet":{
+    "type":"string",
+    "default": "2"
+  },
+  "post_column_mobile":{
+    "type":"string",
+    "default": "1"
+  },
+  "c_autoplay_speed":{
+    "type":"string",
+    "default": "2000"
+  },
+  "c_autoplay_time":{
+    "type":"string",
+    "default": "2000"
+  },
+  "navigation":{
+    "type":"boolean",
+    "default": true
+  },
+  "navigation_position":{
+    "type":"string",
+    "default": "middle"
+  },
+  "g_column":{
+    "type":"string",
+    "default": "3"
+  },
+  "g_tablet":{
+    "type":"string",
+    "default": "2"
+  },
+  "g_mobile":{
+    "type":"string",
+    "default": "1"
+  },
+  "display_pagination":{
+    "type":"boolean",
+    "default": true
+  },
+  "pagination_type":{
+    "type":"string",
+    "default": "number"
+  },
+
+  "image_resize_crop":{
+    "type":"boolean",
+    "default": true
+  },
+  "image_width":{
+    "type":"string",
+    "default": "300"
+  },
+  "image_hight":{
+    "type":"string",
+    "default": "200"
+  }
+}

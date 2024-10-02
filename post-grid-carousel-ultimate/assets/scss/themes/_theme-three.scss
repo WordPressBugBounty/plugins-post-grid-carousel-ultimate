@@ -1,0 +1,18 @@
+/*===========================
+ Style: Theme Three
+===========================*/
+.pgcu-theme-3{
+    .pgcu-post{
+        @include e(title){
+            margin-top: 10px !important;
+            margin-bottom: 12px !important;
+        }
+        @include e(excerpt){
+            margin-bottom: 20px !important;
+        }
+        @include e(details){
+            padding: 20px;
+        }
+        
+    }
+}

@@ -1,0 +1,16 @@
+/*===========================
+ Style: Theme Two
+===========================*/
+.pgcu-theme-2{
+    .pgcu-post{
+        @include e(title){
+            margin-bottom: 12px !important;
+        }
+        @include e(excerpt){
+            margin-bottom: 20px !important;
+        }
+        @include e(details){
+            padding: 20px;
+        }
+    }
+}

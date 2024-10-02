@@ -1,0 +1,67 @@
+/*===========================
+ Utility Classes
+===========================*/
+.pgcu-text-center {
+    text-align: center;
+}
+.pgcu-pos-relative{
+    position: relative;
+}
+.pgcu-d-block{
+    display: block;
+}
+.pgcu-d-flex{
+    display: flex;
+}
+.pgcu-d-flex-wrap{
+    flex-wrap: wrap;
+}
+.pgcu-space-between{
+    justify-content: space-between;
+}
+.pgcu-flex-center{
+    justify-content: center;
+}
+.pgcu-flex-column{
+    flex-direction: column;
+}
+.pgcu-flex-align-center{
+    align-items: center;
+}
+
+.pgcu-tr-0{
+    top:0;
+    right: 0;
+}
+.pgcu-tl-0{
+    top:0;
+    left: 0;
+}
+.pgcu-br-0{
+    bottom:0;
+    right: 0;
+}
+.pgcu-bl-0{
+    bottom:0;
+    left: 0;
+}
+.pgcu-mb-5{
+    margin-bottom: 5px !important;
+}
+.pgcu-mb-10{
+    margin-bottom: 10px !important;
+}
+.pgcu-mb-15{
+    margin-bottom: 15px !important;
+}
+.pgcu-mt-15{
+    margin-top: 15px !important;
+}
+
+
+/* Utility responsiveness */
+@media (max-width: 575px){
+    .wpxu-d-sm-block{
+        display: block;
+    }
+}

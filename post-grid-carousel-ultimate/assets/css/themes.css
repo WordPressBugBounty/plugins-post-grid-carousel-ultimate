@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,700");
+
+/* theme color */
+.aaz_pgcu_wrapper a {
+	color: #363940;
+}
+.aaz_pgcu_wrapper a:hover,
+.pgcu_post .post_title a:hover h4 {
+	color: #f42156;
+}
+.pgcu_post_slider1 .owl-controls .owl-dots .owl-dot span,
+.pgcu_filter_area ul li.active,
+.pgcu_filter_area ul li:hover,
+.pgcu_post.pgcu_post--style2 .read_more:hover,
+.pgcu_post.pgcu_post--style3 .read_more:hover,
+.pgcu_carousel_navigation .pgcu_nav span:hover {
+	background: #f42156;
+	color: #fff;
+}
+
+/* btn */
+.pgcu_container .btn {
+	line-height: 42px;
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0 20px;
+	border: 1px solid #e4e4ed;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 2px;
+}
+.pgcu_container .btn span {
+	margin-left: 10px;
+}
+.pgcu_container .btn--colored {
+	border: 1px solid #f42156;
+	color: #f42156;
+}
+.pgcu_container .load--btn:hover {
+	color: #fff !important;
+}
+.pgcu_title {
+	text-align: center;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	font-weight: 500;
+	font-size: 24px;
+	position: relative;
+}
+.pgcu_title:before {
+	position: absolute;
+	content: "";
+	width: 80px;
+	height: 2px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+	background: #e4e4ed;
+}
+.pgcu_title span {
+	color: #f42156;
+}
+
+.pgcu_post {
+	margin-bottom: 30px;
+}
+.pgcu_post .pgcu_post__contents {
+	padding: 30px;
+}
+.pgcu_post .pgcu_post__contents .post_title {
+	margin-bottom: 15px;
+}
+.author-date {
+	margin-top: 20px;
+	border-top: 1px solid #e4e4ed;
+	padding-top: 15px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.author-date > li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #9192a3;
+	margin-right: 20px;
+}
+.author-date > li img {
+	border-radius: 50%;
+	margin-right: 15px;
+}
+.author-date > li:last-child {
+	position: relative;
+	margin-right: 0;
+}
+.author-date > li:last-child:before {
+	position: absolute;
+	content: "";
+	width: 1px;
+	height: 100%;
+	background: #e4e4ed;
+	left: -10px;
+	top: 0;
+}
+.author-date.no-divider {
+	padding-top: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.author-date.no-divider > li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #9192a3;
+	margin-right: 20px;
+}
+.author-date.no-divider > li img {
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+/* Pagination */
+.pgcu_pagination {
+	text-align: center;
+}
+.pgcu_pagination ul {
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border: 1px solid #e4e4ed;
+	border-radius: 2px;
+}
+.pgcu_pagination ul li + li {
+	border-left: 1px solid #e4e4ed;
+}
+.pgcu_pagination ul li a {
+	line-height: 40px;
+	padding: 0 15px;
+	display: block;
+}
+.pgcu_pagination ul li:nth-child(5) {
+	padding: 0 15px;
+	line-height: 32px;
+}
+.pgcu_pagination ul li.active a {
+	background: #f42156;
+	color: #fff;
+}
+.aaz_pgcu_wrapper .pgcu_load_more {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.pgcu_post__image {
+	position: relative;
+}
+.pgcu_post__image .nav_icon.pgpiSlider {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: 0 none;
+	background: rgba(255, 255, 255, 0.5);
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    padding-top: 13px;
+}
+.pgcu_post__image .nav_icon.pgpiSlider:hover {
+    background: #fff;
+    color: #252525;
+}
+.pgcu_post__image .nav_icon.pgpiSlider.icon-arrow-right {
+	right: 35px;
+}
+.pgcu_post__image .nav_icon.pgpiSlider.icon-arrow-left {
+	left: 35px;
+}
+.pgcu_post__video figcaption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	text-align: center;
+}
+.pgcu_post__video figcaption a {
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	color: #fff;
+	font-size: 12px;
+}
+.pgcu_post__video figcaption a:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	background: #f42156;
+	-webkit-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+.pgcu_post__video figcaption a span {
+	position: relative;
+	z-index: 1;
+}
+.pgcu_post__video figcaption a:hover {
+	color: #fff;
+}
+.pgcu_post__video figcaption a:hover:before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.pgcu_concat-posts {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+
+
+/*****************************
+	RESPONSIVE
+*****************************/
+
+/* 992 TO 1199 */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.pgcu_post.pgcu_post--style5 .pgcu_post__contents .rmbtn-share .rmbtn {
+		margin-right: 10px;
+	}
+	.pgcu_container .btn {
+		line-height: 35px;
+		padding: 0 13px;
+	}
+	.post-bottom-excerpt .boxes li:last-child {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+	.author-date > li:last-child {
+		margin-right: 0;
+	}
+	.pgcu_post.pgcu_post--style23.pgcu_post--style25 {
+		width: 50%;
+		margin-bottom: 0;
+	}
+	.pgcu_timeline_layout {
+		padding: 0;
+	}
+	.pgcu_timeline_layout .timeline_post1 .pgcu_post:before {
+		right: -33px;
+	}
+	.pgcu_timeline_layout .timeline_post2 .pgcu_post:before {
+		left: -33px;
+	}
+	.pgcu_post-gutter > li {
+		width: 172px;
+	}
+	.pgcu_post-gutter2 > li {
+		width: 100%;
+	}
+}
+
+/* 991 */
+@media (max-width: 991px) {
+	.pgcu_post--style9 .post-bottom-excerpt .boxes li a {
+		padding: 0 10px;
+	}
+	.pgcu_post--style19 .pgcu_post-wrapper .post-bottom-excerpt {
+		padding: 15px;
+	}
+	.post-bottom-excerpt ul li + li {
+		margin-left: 10px !important;
+	}
+	.post-bottom-excerpt ul + ul li span {
+		padding-right: 0;
+	}
+	.pgcu_concat-posts {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.pgcu_post.pgcu_post--style23.pgcu_post--style25 {
+		width: 50%;
+		margin-bottom: 0;
+	}
+	.pgcu_post_slider_5 .pgcu_post_slide_single,
+	.pgcu_post_slider_6 .pgcu_post_slide_single,
+	.pgcu_post_slider_6 .pgcu_post_slide_single {
+		display: block;
+	}
+	.pgcu_post-gutter li:nth-child(3),
+	.pgcu_post-gutter li:nth-child(4),
+	.pgcu_post-gutter li:nth-child(5),
+	.pgcu_post-gutter li:nth-child(6) {
+		border: 0 none;
+		padding: 0;
+	}
+	.pgcu_post-gutter2 > li + li {
+		border-top: 1px solid #e4e4ed !important;
+		padding: 25px 0 20px 0 !important;
+	}
+	.pgcu_sidebar_widget {
+		margin-bottom: 30px;
+	}
+	.pgcu_timeline_layout:before {
+		left: 0;
+	}
+	.pgcu_timeline_layout .timeline_post1 .pgcu_post:before,
+	.pgcu_timeline_layout .timeline_post2 .pgcu_post:before {
+		right: auto;
+		left: -73px;
+	}
+	.pgcu_timeline_layout .timeline_post2 {
+		margin-top: 0;
+	}
+	.pgcu_timeline_layout .pgcu_post {
+		width: 100%;
+	}
+}
+
+/* 320 TO 480 */
+@media (min-width: 320px) and (max-width: 480px) {
+	.pgcu_timeline_layout:before {
+		left: 25px;
+	}
+	.pgcu_timeline_layout .timeline_post1 .pgcu_post:before,
+	.pgcu_timeline_layout .timeline_post2 .pgcu_post:before {
+		right: auto;
+		left: -48px;
+	}
+}

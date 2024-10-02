@@ -1,0 +1,27 @@
+/*===========================
+ Style: Theme Four
+===========================*/
+.pgcu-theme-4{
+    padding-bottom: 45px;
+    .pgcu-post{
+        @include e(title){
+            margin-top: 10px !important;
+            margin-bottom: 12px !important;
+        }
+        @include e(excerpt){
+            margin-bottom: 20px !important;
+        }
+        @include e(details){
+            padding: 20px;
+            transition: 0.3s ease;
+        }
+        @include e(content){
+            &:hover{
+                .pgcu-post__details{
+                    border-color: transparent;
+                    box-shadow: 0 5px 20px rgba(#A2A4C1, 0.2);
+                }
+            }
+        }
+    }
+}

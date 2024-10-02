@@ -1,0 +1,1036 @@
+/*
+    Plugin: Post Grid Carousel Ultimate
+    Plugin URI: https://wordpress.org/plugins/post-grid-carousel-ultimate/
+    Author: wpWax
+    Version: 2.0
+*/
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+:root {
+  /* Default Variables */
+  --pgcu-primaryColor: #F31C1C;
+  --pgcu-borderColor: #EBEDF2;
+  --pgcu-textColor: #63666D;
+  --pgcu-textLight: #9C9DAB;
+  --pgcu-textDark: #030213;
+  /* Posts Header Title */
+  --pgcu-headerFontSize: 24px;
+  --pgcu-headerFontColor: #030213;
+  /* Post Title */
+  --pgcu-titleFontSize: 20px;
+  --pgcu-titleColor: #030213;
+  --pgcu-titleColorHover: #F31C1C;
+  /* Post Meta */
+  --pgcu-metaFontSize: 14px;
+  --pgcu-metaColor: #9C9DAB;
+  --pgcu-metaColorHover: #F31C1C;
+  /* Post excerpt */
+  --pgcu-excerptFontSize: 16px;
+  --pgcu-excerptColor: #63666D;
+  /* Read more link */
+  --pgcu-readMoreColor: #030213;
+  --pgcu-readMoreColorHover: #F31C1C;
+  /* Buttons */
+  --pgcu-buttonFontSize: 14px;
+  --pgcu-buttonColor: #030213;
+  --pgcu-buttonColorHover: #ffffff;
+  --pgcu-buttonBg: #EFEFEF;
+  --pgcu-buttonBgHover: #030213;
+  /* Sortable button */
+  --pgcu-sortableBtnBorder: #E4E4ED;
+  --pgcu-sortableBtnColor: #4F515A;
+  --pgcu-sortableBtnActiveBg: #030213;
+  --pgcu-sortableBtnActiveColor: #fff;
+  /* Pagination */
+  --pgcu-pagColor: #4F515A;
+  --pgcu-pagColorHover: #fff;
+  --pgcu-pagBorderColor: #EFEFEF;
+  --pgcu-pagBorderColorHover: #030213;
+  --pgcu-pagBgColor: #fff;
+  --pgcu-pagBgColorHover: #030213;
+  --pgcu-pagActiveColor: #fff;
+  --pgcu-pagActiveBgColor: #030213;
+  --pgcu-pagActiveBorderColor: #030213;
+  /* Badge */
+  --pgcu-badgeColor: #fff;
+  --pgcu-badgeBg: #F31C1C;
+  /* Marquee Animation */
+  --pgcu-marqueeItemsWidth: -2930px;
+  --pgcu-marqueeSpeed: 10000ms;
+  /* Navigaiton */
+  --pgcu-navArrowColor: #030517;
+  --pgcu-navArrowColorHover: #fff;
+  --pgcu-navBgColor: #f5f5f5;
+  --pgcu-navBgColorHover: #F31C1C;
+  --pgcu-navBorderColor: #f5f5f5;
+  --pgcu-navBorderColorHover: #F31C1C;
+}
+
+/* General Styles */
+.pgcu-posts {
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header style */
+.pgcu-posts__header {
+  margin: 0 0 30px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0;
+  text-align: left !important;
+}
+
+.pgcu-posts__header--middle {
+  text-align: center !important;
+}
+
+.pgcu-posts__header--right {
+  text-align: right !important;
+}
+
+.pgcu-posts__header h2 {
+  font-size: var(--pgcu-headerFontSize);
+  color: var(--pgcu-headerFontColor) !important;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+/* Post card */
+.pgcu-post__img > a {
+  display: block;
+  line-height: 0;
+}
+
+.pgcu-post__img > a img {
+  margin: 0;
+}
+
+.pgcu-post__img__upper-content {
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.pgcu-post__img__upper-content--bottom-left {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+
+.pgcu-post--rounded-border {
+  border-radius: 6px;
+}
+
+.pgcu-post--rounded-border .pgcu-post__img {
+  position: relative;
+}
+
+.pgcu-post--rounded-border .pgcu-post__img img {
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+}
+
+.pgcu-post--rounded-border .pgcu-post__details {
+  border: 1px solid #EBEDF2;
+  border-top: 0 none;
+  border-radius: 0 0 6px 6px;
+  transition: 0.3s ease;
+}
+
+.pgcu-post__content {
+  background: #fff;
+  border-radius: 6px;
+}
+
+/* Carousel default */
+.pgcu-carousel {
+  position: relative;
+  overflow: hidden;
+  /* Carousel marquee effect */
+}
+
+.pgcu-carousel--marquee .swiper-wrapper {
+  transition: none !important;
+}
+
+.pgcu-carousel--marquee:hover .swiper-wrapper {
+  animation-play-state: paused;
+}
+
+.pgcu-carousel--marquee .pgcu-carousel-nav {
+  display: none;
+}
+
+/* Carousel nav style */
+.pgcu-carousel-nav {
+  margin: 0 -5px;
+  padding: 0 15px;
+}
+
+.pgcu-carousel-nav__btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--pgcu-navBorderColor) !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background: var(--pgcu-navBgColor) !important;
+}
+
+.pgcu-carousel-nav__btn svg {
+  width: 8px;
+  height: 16px;
+  fill: var(--pgcu-navArrowColor) !important;
+}
+
+.pgcu-carousel-nav__btn:hover {
+  border-color: var(--pgcu-navBorderColorHover) !important;
+  background: var(--pgcu-navBgColorHover) !important;
+}
+
+.pgcu-carousel-nav__btn:hover svg {
+  fill: var(--pgcu-navArrowColorHover) !important;
+}
+
+.pgcu-carousel-nav--circle .pgcu-carousel-nav__btn {
+  border-radius: 50%;
+}
+
+.pgcu-carousel-nav--bottom-left {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.pgcu-carousel-nav--bottom-center {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pgcu-carousel-nav--bottom-right {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.pgcu-carousel-nav--middle {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+.pgcu-carousel-nav--middle .pgcu-carousel-nav__btn {
+  margin: 0;
+  pointer-events: all;
+}
+
+.pgcu-carousel-nav--middle .pgcu-carousel-nav__btn--prev {
+  margin-left: 0;
+}
+
+.pgcu-carousel-nav--middle .pgcu-carousel-nav__btn--next {
+  margin-right: 0;
+}
+
+.pgcu-carousel-nav--top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.pgcu-carousel-nav--top-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.pgcu-carousel-nav--top-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+/* Sortable grid */
+.pgcu-post-sortable__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: -4px -4px 36px;
+}
+
+.pgcu-post-sortable__nav .pgcu-post-sortable__btn {
+  margin: 4px;
+  color: var(--pgcu-sortableBtnColor) !important;
+  font-size: 14px;
+  font-weight: 500;
+  height: 38px;
+  padding: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid var(--pgcu-sortableBtnBorder) !important;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.pgcu-post-sortable__nav .pgcu-post-sortable__btn--active {
+  border-color: var(--pgcu-sortableBtnActiveBg) !important;
+  color: var(--pgcu-sortableBtnActiveColor) !important;
+  background: var(--pgcu-sortableBtnActiveBg) !important;
+}
+
+.pgcu-post-sortable .pgcu-row {
+  margin-top: 0;
+}
+
+.pgcu-post-sortable .pgcu-row .pgcu-post {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Loading effect */
+.pgcu-post-loading {
+  position: relative;
+}
+
+.pgcu-post-loading:before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #F31C1C;
+  border-top-color: transparent;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: pgcu-rotate 1s linear infinite;
+}
+
+.pgcu-post-loading:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+}
+
+/* pgcu grid */
+.pgcu-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-top: -25px;
+  min-width: 100%;
+}
+
+.pgcu-row > * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+/* pgcu columns */
+.pgcu-column-1 .pgcu-post {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.pgcu-column-2 .pgcu-post {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+.pgcu-column-3 .pgcu-post {
+  flex: 0 0 33.33%;
+  width: 33.33%;
+}
+
+.pgcu-column-4 .pgcu-post {
+  flex: 0 0 25%;
+  width: 25%;
+}
+
+.pgcu-column-5 .pgcu-post {
+  flex: 0 0 20%;
+  width: 20%;
+}
+
+/* columns in mobile and tablet */
+@media only screen and (max-width: 991px) {
+  .pgcu-column-md-1 .pgcu-post {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+  }
+  .pgcu-column-md-2 .pgcu-post {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  .pgcu-column-md-3 .pgcu-post {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+  }
+  .pgcu-column-md-4 .pgcu-post {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pgcu-column-sm-1 .pgcu-post {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+  }
+  .pgcu-column-sm-2 .pgcu-post {
+    flex: 0 0 50%;
+    width: 50%;
+  }
+  .pgcu-column-sm-3 .pgcu-post {
+    flex: 0 0 33.33%;
+    width: 33.33%;
+  }
+  .pgcu-column-sm-4 .pgcu-post {
+    flex: 0 0 25%;
+    width: 25%;
+    display: flex;
+  }
+}
+
+/* Keyframes */
+@keyframes pgcu-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pgcu-marquee {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*===========================
+ Style: Components
+===========================*/
+/* Post title */
+.pgcu-post__title {
+  margin: 0 !important;
+  font-size: unset;
+  line-height: 1.2;
+}
+
+.pgcu-post__title:before, .pgcu-post__title:after {
+  content: none;
+}
+
+.pgcu-post__title a {
+  font-size: var(--pgcu-titleFontSize);
+  color: var(--pgcu-titleColor) !important;
+  transition: 0.3s ease;
+  text-decoration: none !important;
+  border: 0 none !important;
+  line-height: inherit;
+}
+
+.pgcu-post__title a:hover {
+  color: var(--pgcu-titleColorHover) !important;
+}
+
+/* Post Meta */
+.pgcu-post__meta {
+  margin: 0 -11px !important;
+  padding: 0 !important;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pgcu-post__meta li {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0 11px !important;
+}
+
+.pgcu-post__meta li a {
+  text-decoration: none !important;
+  font-size: 14px;
+  color: var(--pgcu-metaColor) !important;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.pgcu-post__meta li a:hover {
+  color: var(--pgcu-metaColorHover) !important;
+}
+
+.pgcu-post__meta--dots li:not(:last-child) {
+  position: relative;
+}
+
+.pgcu-post__meta--dots li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--pgcu-textLight);
+}
+
+.pgcu-post__meta--has-icon {
+  margin: 0 -10px !important;
+  position: relative;
+}
+
+.pgcu-post__meta--has-icon li {
+  padding: 0 10px;
+}
+
+.pgcu-post__meta--has-icon li span {
+  font-size: 14px;
+  color: var(--pgcu-metaColor) !important;
+  display: block;
+}
+
+.pgcu-post__meta--has-icon li div {
+  display: flex;
+  align-items: center;
+}
+
+.pgcu-post__meta--has-icon li svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--pgcu-metaColor) !important;
+  margin-right: 8px;
+}
+
+.pgcu-post__meta__share {
+  position: relative;
+}
+
+.pgcu-post__meta__share__dropdown {
+  position: absolute;
+  width: 130px;
+  left: auto;
+  right: -15px;
+  top: 40px;
+  box-shadow: 0 0 15px rgba(3, 2, 19, 0.1);
+  padding: 15px;
+  background: #fff;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+
+.pgcu-post__meta__share__dropdown a {
+  display: block;
+  margin: 0 7px;
+  text-decoration: none !important;
+  transition: 0.3s ease;
+  flex: none;
+  line-height: 1;
+}
+
+.pgcu-post__meta__share__dropdown a svg {
+  margin-right: 0;
+}
+
+.pgcu-post__meta__share__dropdown a:hover svg {
+  fill: var(--pgcu-metaColorHover) !important;
+}
+
+.pgcu-post__meta__share:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 10px;
+  left: 0;
+  bottom: -12px;
+}
+
+.pgcu-post__meta__share:hover {
+  cursor: pointer;
+}
+
+.pgcu-post__meta__share:hover .pgcu-post__meta__share__icon svg {
+  fill: var(--pgcu-metaColorHover) !important;
+}
+
+.pgcu-post__meta__share:hover .pgcu-post__meta__share__icon span {
+  color: var(--pgcu-metaColorHover) !important;
+}
+
+.pgcu-post__meta__share:hover .pgcu-post__meta__share__dropdown {
+  top: 26px;
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.pgcu-post__meta__categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -3px !important;
+}
+
+.pgcu-post__meta__categories > a {
+  margin: 3px;
+  text-decoration: none !important;
+}
+
+.pgcu-post__meta__categories > a:first-child:after {
+  content: ',';
+}
+
+.pgcu-post__meta__categories > a:last-child:after {
+  content: none;
+}
+
+.pgcu-post__meta__categories-more {
+  line-height: 0.5;
+  position: relative;
+}
+
+.pgcu-post__meta__categories-more span {
+  display: block;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.pgcu-post__meta__categories-more span svg {
+  width: 9px;
+  height: 9px;
+  fill: var(--pgcu-textLight);
+  transition: 0.3s ease;
+}
+
+.pgcu-post__meta__categories-more div {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  right: -12px;
+  bottom: calc(100% + 10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  min-width: 100px;
+}
+
+.pgcu-post__meta__categories-more div:before {
+  position: absolute;
+  content: '';
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 9px solid #fff;
+  right: 10px;
+  bottom: -9px;
+}
+
+.pgcu-post__meta__categories-more div:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  left: 0;
+  bottom: -13px;
+  background: transparent;
+}
+
+.pgcu-post__meta__categories-more div a {
+  display: block;
+  line-height: 1;
+  text-decoration: none !important;
+}
+
+.pgcu-post__meta__categories-more div a:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.pgcu-post__meta__categories-more:hover span svg {
+  fill: var(--pgcu-primaryColor);
+}
+
+.pgcu-post__meta__categories-more:hover span + div {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Post Excerpt */
+.pgcu-post__excerpt {
+  color: var(--pgcu-excerptColor) !important;
+  font-size: var(--pgcu-excerptFontSize);
+  line-height: 1.625;
+  margin: 0;
+}
+
+/* Buttons */
+.pgcu-button {
+  background: var(--pgcu-buttonBg) !important;
+  color: var(--pgcu-buttonColor) !important;
+  font-size: var(--pgcu-buttonFontSize);
+  font-weight: 500;
+  height: 38px;
+  padding: 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+  line-height: 1;
+}
+
+.pgcu-button:hover {
+  background: var(--pgcu-buttonBgHover) !important;
+  color: var(--pgcu-buttonColorHover) !important;
+}
+
+.pgcu-button--rounded {
+  border-radius: 4px;
+}
+
+.pgcu-button--loading {
+  position: relative;
+}
+
+.pgcu-button--loading:after {
+  content: "";
+  position: absolute;
+}
+
+.pgcu-button--active {
+  background: var(--pgcu-buttonBgHover) !important;
+  color: var(--pgcu-buttonColorHover) !important;
+}
+
+/* Read more link */
+.pgcu-post__readmore {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--pgcu-readMoreColor) !important;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.pgcu-post__readmore svg {
+  width: 11px;
+  height: 13px;
+  margin-left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+  fill: var(--pgcu-readMoreColor);
+}
+
+.pgcu-post__readmore:hover {
+  color: var(--pgcu-readMoreColorHover) !important;
+  text-decoration: underline !important;
+}
+
+.pgcu-post__readmore:hover svg {
+  margin-left: 7px;
+  visibility: visible;
+  opacity: 1;
+  fill: var(--pgcu-readMoreColorHover);
+}
+
+/* Badges */
+.pgcu-post__badge {
+  border-radius: 3px;
+  background: var(--pgcu-badgeBg) !important;
+  color: var(--pgcu-badgeColor) !important;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 500;
+  height: 22px;
+  border-radius: 3px;
+  padding: 0 4px;
+  line-height: 24px;
+  display: inline-block;
+}
+
+/*===========================
+ Utility Classes
+===========================*/
+.pgcu-text-center {
+  text-align: center;
+}
+
+.pgcu-pos-relative {
+  position: relative;
+}
+
+.pgcu-d-block {
+  display: block;
+}
+
+.pgcu-d-flex {
+  display: flex;
+}
+
+.pgcu-d-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.pgcu-space-between {
+  justify-content: space-between;
+}
+
+.pgcu-flex-center {
+  justify-content: center;
+}
+
+.pgcu-flex-column {
+  flex-direction: column;
+}
+
+.pgcu-flex-align-center {
+  align-items: center;
+}
+
+.pgcu-tr-0 {
+  top: 0;
+  right: 0;
+}
+
+.pgcu-tl-0 {
+  top: 0;
+  left: 0;
+}
+
+.pgcu-br-0 {
+  bottom: 0;
+  right: 0;
+}
+
+.pgcu-bl-0 {
+  bottom: 0;
+  left: 0;
+}
+
+.pgcu-mb-5 {
+  margin-bottom: 5px !important;
+}
+
+.pgcu-mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.pgcu-mb-15 {
+  margin-bottom: 15px !important;
+}
+
+.pgcu-mt-15 {
+  margin-top: 15px !important;
+}
+
+/* Utility responsiveness */
+@media (max-width: 575px) {
+  .wpxu-d-sm-block {
+    display: block;
+  }
+}
+
+/*===========================
+ Pagination styles
+===========================*/
+.pgcu-pagination .pagination {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.pgcu-pagination .pagination .nav-links {
+  margin: 25px -5px -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pgcu-pagination.pgcu-pagination--left .pagination .nav-links {
+  justify-content: flex-start;
+}
+
+.pgcu-pagination.pgcu-pagination--right .pagination .nav-links {
+  justify-content: flex-end;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers {
+  color: var(--pgcu-pagColor) !important;
+  margin: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid var(--pgcu-pagBorderColor) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: var(--pgcu-pagBgColor) !important;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  min-height: 34px;
+  border-radius: 4px !important;
+  transition: 0.3s ease;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers:before, .pgcu-pagination .pagination .nav-links .page-numbers:after {
+  content: none;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers.prev, .pgcu-pagination .pagination .nav-links .page-numbers.next {
+  position: static;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers svg {
+  fill: var(--pgcu-pagColor) !important;
+  transition: 0.3s ease;
+  width: 12px;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers:hover svg {
+  fill: var(--pgcu-pagColorHover) !important;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers:hover {
+  background: var(--pgcu-pagBgColorHover) !important;
+  border-color: var(--pgcu-pagBorderColorHover) !important;
+  color: var(--pgcu-pagColorHover) !important;
+}
+
+.pgcu-pagination .pagination .nav-links .page-numbers.current {
+  background: var(--pgcu-pagActiveBgColor) !important;
+  border-color: var(--pgcu-pagActiveBorderColor) !important;
+  color: var(--pgcu-pagActiveColor) !important;
+  box-shadow: none !important;
+}
+
+/*===========================
+ Style: Theme One
+===========================*/
+.pgcu-theme-1 .pgcu-post__title {
+  margin-bottom: 12px !important;
+}
+
+.pgcu-theme-1 .pgcu-post__meta {
+  margin-bottom: 16px !important;
+}
+
+.pgcu-theme-1 .pgcu-post__excerpt {
+  margin-bottom: 14px !important;
+}
+
+.pgcu-theme-1 .pgcu-post__details {
+  padding: 20px;
+}
+
+/*===========================
+ Style: Theme Two
+===========================*/
+.pgcu-theme-2 .pgcu-post__title {
+  margin-bottom: 12px !important;
+}
+
+.pgcu-theme-2 .pgcu-post__excerpt {
+  margin-bottom: 20px !important;
+}
+
+.pgcu-theme-2 .pgcu-post__details {
+  padding: 20px;
+}
+
+/*===========================
+ Style: Theme Three
+===========================*/
+.pgcu-theme-3 .pgcu-post__title {
+  margin-top: 10px !important;
+  margin-bottom: 12px !important;
+}
+
+.pgcu-theme-3 .pgcu-post__excerpt {
+  margin-bottom: 20px !important;
+}
+
+.pgcu-theme-3 .pgcu-post__details {
+  padding: 20px;
+}
+
+/*===========================
+ Style: Theme Four
+===========================*/
+.pgcu-theme-4 {
+  padding-bottom: 45px;
+}
+
+.pgcu-theme-4 .pgcu-post__title {
+  margin-top: 10px !important;
+  margin-bottom: 12px !important;
+}
+
+.pgcu-theme-4 .pgcu-post__excerpt {
+  margin-bottom: 20px !important;
+}
+
+.pgcu-theme-4 .pgcu-post__details {
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+.pgcu-theme-4 .pgcu-post__content:hover .pgcu-post__details {
+  border-color: transparent;
+  box-shadow: 0 5px 20px rgba(162, 164, 193, 0.2);
+}

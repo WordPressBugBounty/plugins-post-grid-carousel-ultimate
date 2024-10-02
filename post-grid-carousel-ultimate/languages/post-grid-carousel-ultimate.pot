@@ -1,0 +1,451 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Blank Pot v1.0.0\n"
+"POT-Creation-Date: 2019-08-01 15:00+0600\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Your Team <translations@example.com>\n"
+"Report-Msgid-Bugs-To: Translator Name <translations@example.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/adl-custom-post.php:22
+msgctxt "post type general name"
+msgid "Shortcodes"
+msgstr ""
+
+#: classes/adl-custom-post.php:23
+msgctxt "post type singular name"
+msgid "Shortcode"
+msgstr ""
+
+#: classes/adl-custom-post.php:24
+msgctxt "admin menu"
+msgid "Post Grid & Carousel"
+msgstr ""
+
+#: classes/adl-custom-post.php:25
+msgctxt "add new on admin bar"
+msgid "Shortcode"
+msgstr ""
+
+#: classes/adl-custom-post.php:26
+msgctxt "Shortcode"
+msgid "New Grid/Carousel"
+msgstr ""
+
+#: classes/adl-custom-post.php:27 classes/adl-custom-post.php:28
+msgid "New Grid/Carousel"
+msgstr ""
+
+#: classes/adl-custom-post.php:29
+msgid "Edit Post Grid/Carousel"
+msgstr ""
+
+#: classes/adl-custom-post.php:30
+msgid "View Post Grid/Carousel"
+msgstr ""
+
+#: classes/adl-custom-post.php:31
+msgid "All Grid/Carousel"
+msgstr ""
+
+#: classes/adl-custom-post.php:32
+msgid "Search Shortcodes"
+msgstr ""
+
+#: classes/adl-custom-post.php:33
+msgid "Parent Shortcodes:"
+msgstr ""
+
+#: classes/adl-custom-post.php:34
+msgid "No Shortcodes found."
+msgstr ""
+
+#: classes/adl-custom-post.php:35
+msgid "No Shortcodes found in Trash."
+msgstr ""
+
+#: classes/adl-custom-post.php:40
+msgid "Description."
+msgstr ""
+
+#: classes/adl-custom-post.php:61
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr ""
+
+#: classes/adl-custom-post.php:62
+msgctxt "taxonomy singular name"
+msgid "category"
+msgstr ""
+
+#: classes/adl-custom-post.php:63
+msgid "Search Categories"
+msgstr ""
+
+#: classes/adl-custom-post.php:64
+msgid "All Categories"
+msgstr ""
+
+#: classes/adl-custom-post.php:65
+msgid "Parent category"
+msgstr ""
+
+#: classes/adl-custom-post.php:66
+msgid "Parent category:"
+msgstr ""
+
+#: classes/adl-custom-post.php:67
+msgid "Edit category"
+msgstr ""
+
+#: classes/adl-custom-post.php:68
+msgid "Update category"
+msgstr ""
+
+#: classes/adl-custom-post.php:69
+msgid "Add New category"
+msgstr ""
+
+#: classes/adl-custom-post.php:70
+msgid "New category Name"
+msgstr ""
+
+#: classes/adl-custom-post.php:71
+msgid "category"
+msgstr ""
+
+#: classes/adl-custom-post.php:91
+msgid "Post Name"
+msgstr ""
+
+#: classes/adl-custom-post.php:92
+msgid "Post Shortcode"
+msgstr ""
+
+#: classes/adl-custom-post.php:93
+msgid "Shortcode for Template File"
+msgstr ""
+
+#: classes/adl-custom-post.php:94
+msgid "Created at"
+msgstr ""
+
+#: classes/adl-gc-widget.php:126
+msgid "Latest Posts"
+msgstr ""
+
+#: classes/adl-gc-widget.php:131
+msgid "latest"
+msgstr ""
+
+#: classes/adl-gc-widget.php:137
+msgid "post"
+msgstr ""
+
+#: classes/adl-gc-widget.php:150
+msgid "Title"
+msgstr ""
+
+#: classes/adl-gc-widget.php:155
+#: classes/adl-post-grid-carousel-metabox.php:151
+msgid "Display Post From"
+msgstr ""
+
+#: classes/adl-gc-widget.php:167
+#: classes/adl-post-grid-carousel-metabox.php:225
+#: classes/adl-post-grid-carousel-metabox.php:363
+#: classes/adl-post-grid-carousel-metabox.php:599
+msgid "Select Theme"
+msgstr ""
+
+#: classes/adl-gc-widget.php:177
+msgid "Posts Per Page"
+msgstr ""
+
+#: classes/adl-gc-widget.php:182
+msgid "Post Type"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:23
+msgid "Settings & Shortcode Generator"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:57
+msgid "Shortcodes"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:59
+msgid "General Settings"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:61
+msgid "Carousel Settings"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:63
+msgid "Grid Settings"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:65
+msgid "Sortable Grid Settings"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:67
+msgid "Style Settings"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:72
+msgid "Shortcode"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:73
+msgid ""
+"Copy this shortcode and paste on page or post where you want to display "
+"post grid,carousel and sortable grid.Use PHP code to your themes file to "
+"display post grid."
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:77
+msgid "PHP Code:"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:92
+msgid "Post type"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:126
+msgid "Layout"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:140
+msgid "Total Posts"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:171
+msgid "Enable Image Resizing & Cropping"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:172
+#: classes/adl-post-grid-carousel-metabox.php:181
+msgid "Yes"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:173
+#: classes/adl-post-grid-carousel-metabox.php:182
+msgid "No"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:180
+msgid "Enable Image Upscaling"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:183
+msgid ""
+"If the product image is less than the cropping size set above then by "
+"default, image will break. However, you can solve this problem by "
+"enabling upscaling."
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:189
+msgid "Image Width"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:193
+msgid "Image cropping width."
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:198
+msgid "Image Height"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:202
+msgid "Image cropping height."
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:255
+msgid "Select Columns"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:268
+msgid "Select Columns for Tablet"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:281
+msgid "Select Columns for Mobile"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:295
+msgid "Pagination Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:308
+msgid "Pagination Text Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:319
+msgid "Pagination Text Hover Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:330
+msgid "Pagination Active Text Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:341
+msgid "Pagination Active Background Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:376
+msgid "Post Column"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:387
+msgid "Post column on Tablet"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:395
+msgid "Post column on Mobile"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:402
+msgid "Autoplay Pause"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:411
+msgid "Autoplay Speed"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:419
+msgid "Autoplay Timeout"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:427
+msgid "Pause on Hover"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:436
+msgid "Mouse Draggable"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:448
+msgid "Post Title Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:455
+msgid "Post Title Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:463
+msgid "Post Title Hover Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:470
+msgid "Post Title Alignment"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:487
+msgid "Post Content Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:494
+msgid "Post Content Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:501
+msgid "Post Content Alignment"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:518
+msgid "Post Author Name Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:525
+msgid "Post Date Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:532
+msgid "Post Category Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:539
+msgid "Read More Hide"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:546
+msgid "Read More Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:553
+msgid "Read More Background Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:560
+msgid "Read More Border Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:567
+msgid "Read More Hover  Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:574
+msgid "Read More Hover Background Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:588
+msgid "Select Sortable Grid Type"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:610
+msgid "Sortable Menu Background Hover Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:618
+msgid "Sortable Menu Text Hover Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:626
+msgid "Sortable Menu Background Active Color"
+msgstr ""
+
+#: classes/adl-post-grid-carousel-metabox.php:634
+msgid "Sortable Menu Text Active Color"
+msgstr ""
+
+#: classes/carousel/theme-1.php:83 classes/carousel/theme-2.php:88
+#: classes/carousel/theme-3.php:61 classes/grid/theme-1.php:90
+#: classes/sortable/s-theme.php:127 classes/sortable/s-theme.php:268
+msgid "Read More"
+msgstr ""
+
+#: classes/grid/theme-1.php:127 classes/grid/theme-2.php:87
+msgid "Previous"
+msgstr ""
+
+#: classes/grid/theme-1.php:128 classes/grid/theme-2.php:88
+msgid "Next"
+msgstr ""
+
+#: post-grid-and-carousel-ultimate.php:65
+msgid "Support"
+msgstr ""
+
+#: post-grid-and-carousel-ultimate.php:65
+msgid "Usage & Support"
+msgstr ""

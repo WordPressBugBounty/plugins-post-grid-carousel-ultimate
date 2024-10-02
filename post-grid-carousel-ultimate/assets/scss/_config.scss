@@ -1,0 +1,91 @@
+//Mixin
+//BEM Element and Modifier
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+//variables
+$primary: #F31C1C;
+$borderColor: #EBEDF2;
+$textColor: #63666D;
+$textLight: #9C9DAB;
+$textDark: #030213;
+
+:root {
+    /* Default Variables */
+    --pgcu-primaryColor: #F31C1C;
+    --pgcu-borderColor: #EBEDF2;
+    --pgcu-textColor: #63666D;
+    --pgcu-textLight: #9C9DAB;
+    --pgcu-textDark: #030213;
+
+    /* Posts Header Title */
+    --pgcu-headerFontSize: 24px;
+    --pgcu-headerFontColor: #030213;
+
+    /* Post Title */
+    --pgcu-titleFontSize: 20px;
+    --pgcu-titleColor: #030213;
+    --pgcu-titleColorHover: #F31C1C;
+
+    /* Post Meta */
+    --pgcu-metaFontSize: 14px;
+    --pgcu-metaColor: #9C9DAB;
+    --pgcu-metaColorHover: #F31C1C;
+
+    /* Post excerpt */
+    --pgcu-excerptFontSize: 16px;
+    --pgcu-excerptColor: #63666D;
+
+    /* Read more link */
+    --pgcu-readMoreColor: #030213;
+    --pgcu-readMoreColorHover: #F31C1C;
+
+    /* Buttons */
+    --pgcu-buttonFontSize: 14px;
+    --pgcu-buttonColor: #030213;
+    --pgcu-buttonColorHover: #ffffff;
+    --pgcu-buttonBg: #EFEFEF;
+    --pgcu-buttonBgHover: #030213;
+
+    /* Sortable button */
+    --pgcu-sortableBtnBorder: #E4E4ED;
+    --pgcu-sortableBtnColor: #4F515A;
+    --pgcu-sortableBtnActiveBg: #030213;
+    --pgcu-sortableBtnActiveColor: #fff;
+
+    /* Pagination */
+    --pgcu-pagColor: #4F515A;
+    --pgcu-pagColorHover: #fff;
+    --pgcu-pagBorderColor: #EFEFEF;
+    --pgcu-pagBorderColorHover: #030213;
+    --pgcu-pagBgColor: #fff;
+    --pgcu-pagBgColorHover: #030213;
+    --pgcu-pagActiveColor: #fff;
+    --pgcu-pagActiveBgColor: #030213;
+    --pgcu-pagActiveBorderColor: #030213;
+
+    /* Badge */
+    --pgcu-badgeColor: #fff;
+    --pgcu-badgeBg: #F31C1C;
+
+    /* Marquee Animation */
+    --pgcu-marqueeItemsWidth: -2930px;
+    --pgcu-marqueeSpeed: 10000ms;
+
+    /* Navigaiton */
+    --pgcu-navArrowColor: #030517;
+    --pgcu-navArrowColorHover: #fff;
+    --pgcu-navBgColor: #f5f5f5;
+    --pgcu-navBgColorHover: #F31C1C;
+    --pgcu-navBorderColor: #f5f5f5;
+    --pgcu-navBorderColorHover: #F31C1C;
+}
