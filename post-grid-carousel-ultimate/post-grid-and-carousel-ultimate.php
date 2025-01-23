@@ -3,7 +3,7 @@
 Plugin Name: Post Grid, Slider & Carousel Ultimate
 Plugin URI: https://wordpress.org/product/post-grid-carousel-ultimate-pro
 Description: Use Post Grid & Carousel Ultimate Plugin to display your posts in different beautiful Grids and Sliders/Carousels very easily.
-Version: 1.6.10
+Version: 1.7
 Author: wpWax
 Author URI: https://wpwax.com
 License: GPLv2 or later
@@ -77,7 +77,7 @@ Final class post_grid_and_carousel_ultimate
 
 			add_action( 'admin_enqueue_scripts', array( self::$instance, 'load_admin_file') );
             add_action( 'template_redirect', array( self::$instance, 'template_enqueue_file') );
-			add_action( 'plugin_loaded', array( self::$instance, 'load_textdomain' ) );
+			add_action( 'init', array( self::$instance, 'load_textdomain' ) );
 			add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array( self::$instance, 'pro_version_plugin_link') );
 
             // enqueue for elementor 
@@ -180,7 +180,12 @@ Final class post_grid_and_carousel_ultimate
      * plugin text domain
      */
     public function load_textdomain() {
-        load_plugin_textdomain( PGCU_TEXTDOMAIN, false, PGCU_LANG_DIR );
+        // Determine the current locale
+        $locale = determine_locale();
+        // Allow filters to modify the locale
+        $locale = apply_filters( 'plugin_locale', $locale, 'post-grid-carousel-ultimate' );
+        load_textdomain( 'post-grid-carousel-ultimate', WP_LANG_DIR . '/plugins/post-grid-carousel-ultimate-' . $locale . '.mo' );
+        load_plugin_textdomain( 'post-grid-carousel-ultimate', false, PGCU_LANG_DIR );
     }
 
     public function set_post_views($postID) {
