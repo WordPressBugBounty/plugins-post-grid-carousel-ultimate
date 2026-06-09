@@ -82,15 +82,12 @@
   padding: 0;
   text-align: left !important;
 }
-
 .pgcu-posts__header--middle {
   text-align: center !important;
 }
-
 .pgcu-posts__header--right {
   text-align: right !important;
 }
-
 .pgcu-posts__header h2 {
   font-size: var(--pgcu-headerFontSize);
   color: var(--pgcu-headerFontColor) !important;
@@ -103,43 +100,35 @@
   display: block;
   line-height: 0;
 }
-
 .pgcu-post__img > a img {
   margin: 0;
 }
-
 .pgcu-post__img__upper-content {
   position: absolute;
   box-sizing: border-box;
 }
-
 .pgcu-post__img__upper-content--bottom-left {
   left: 0;
   bottom: 0;
   width: 100%;
   padding: 15px;
 }
-
 .pgcu-post--rounded-border {
   border-radius: 6px;
 }
-
 .pgcu-post--rounded-border .pgcu-post__img {
   position: relative;
 }
-
 .pgcu-post--rounded-border .pgcu-post__img img {
   border-radius: 6px 6px 0 0;
   width: 100%;
 }
-
 .pgcu-post--rounded-border .pgcu-post__details {
   border: 1px solid #EBEDF2;
   border-top: 0 none;
   border-radius: 0 0 6px 6px;
   transition: 0.3s ease;
 }
-
 .pgcu-post__content {
   background: #fff;
   border-radius: 6px;
@@ -151,15 +140,12 @@
   overflow: hidden;
   /* Carousel marquee effect */
 }
-
 .pgcu-carousel--marquee .swiper-wrapper {
   transition: none !important;
 }
-
 .pgcu-carousel--marquee:hover .swiper-wrapper {
   animation-play-state: paused;
 }
-
 .pgcu-carousel--marquee .pgcu-carousel-nav {
   display: none;
 }
@@ -169,7 +155,6 @@
   margin: 0 -5px;
   padding: 0 15px;
 }
-
 .pgcu-carousel-nav__btn {
   width: 40px;
   height: 40px;
@@ -182,26 +167,21 @@
   transition: 0.3s ease;
   background: var(--pgcu-navBgColor) !important;
 }
-
 .pgcu-carousel-nav__btn svg {
   width: 8px;
   height: 16px;
   fill: var(--pgcu-navArrowColor) !important;
 }
-
 .pgcu-carousel-nav__btn:hover {
   border-color: var(--pgcu-navBorderColorHover) !important;
   background: var(--pgcu-navBgColorHover) !important;
 }
-
 .pgcu-carousel-nav__btn:hover svg {
   fill: var(--pgcu-navArrowColorHover) !important;
 }
-
 .pgcu-carousel-nav--circle .pgcu-carousel-nav__btn {
   border-radius: 50%;
 }
-
 .pgcu-carousel-nav--bottom-left {
   margin-top: 35px;
   display: flex;
@@ -209,14 +189,12 @@
   justify-content: flex-start;
   padding: 0;
 }
-
 .pgcu-carousel-nav--bottom-center {
   margin-top: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .pgcu-carousel-nav--bottom-right {
   margin-top: 35px;
   display: flex;
@@ -224,7 +202,6 @@
   justify-content: flex-end;
   padding: 0;
 }
-
 .pgcu-carousel-nav--middle {
   position: absolute;
   width: 100%;
@@ -239,20 +216,16 @@
   padding: 0;
   pointer-events: none;
 }
-
 .pgcu-carousel-nav--middle .pgcu-carousel-nav__btn {
   margin: 0;
   pointer-events: all;
 }
-
 .pgcu-carousel-nav--middle .pgcu-carousel-nav__btn--prev {
   margin-left: 0;
 }
-
 .pgcu-carousel-nav--middle .pgcu-carousel-nav__btn--next {
   margin-right: 0;
 }
-
 .pgcu-carousel-nav--top-right {
   display: flex;
   align-items: center;
@@ -260,7 +233,6 @@
   margin-bottom: 30px;
   padding: 0;
 }
-
 .pgcu-carousel-nav--top-left {
   display: flex;
   align-items: center;
@@ -268,7 +240,6 @@
   margin-bottom: 30px;
   padding: 0;
 }
-
 .pgcu-carousel-nav--top-center {
   display: flex;
   align-items: center;
@@ -285,7 +256,6 @@
   justify-content: center;
   margin: -4px -4px 36px;
 }
-
 .pgcu-post-sortable__nav .pgcu-post-sortable__btn {
   margin: 4px;
   color: var(--pgcu-sortableBtnColor) !important;
@@ -301,17 +271,14 @@
   border-radius: 4px;
   background: #fff;
 }
-
 .pgcu-post-sortable__nav .pgcu-post-sortable__btn--active {
   border-color: var(--pgcu-sortableBtnActiveBg) !important;
   color: var(--pgcu-sortableBtnActiveColor) !important;
   background: var(--pgcu-sortableBtnActiveBg) !important;
 }
-
 .pgcu-post-sortable .pgcu-row {
   margin-top: 0;
 }
-
 .pgcu-post-sortable .pgcu-row .pgcu-post {
   margin-top: 0;
   margin-bottom: 30px;
@@ -321,7 +288,6 @@
 .pgcu-post-loading {
   position: relative;
 }
-
 .pgcu-post-loading:before {
   content: "";
   position: absolute;
@@ -336,7 +302,6 @@
   transform: translate(-50%, -50%);
   animation: pgcu-rotate 1s linear infinite;
 }
-
 .pgcu-post-loading:after {
   content: "";
   width: 100%;
@@ -412,7 +377,6 @@
     width: 25%;
   }
 }
-
 @media only screen and (max-width: 767px) {
   .pgcu-column-sm-1 .pgcu-post {
     flex: 0 0 100% !important;
@@ -432,7 +396,6 @@
     display: flex;
   }
 }
-
 /* Keyframes */
 @keyframes pgcu-rotate {
   0% {
@@ -442,13 +405,11 @@
     transform: rotate(360deg);
   }
 }
-
 @keyframes pgcu-marquee {
   to {
     transform: translateX(-100%);
   }
 }
-
 /*===========================
  Style: Components
 ===========================*/
@@ -458,11 +419,9 @@
   font-size: unset;
   line-height: 1.2;
 }
-
 .pgcu-post__title:before, .pgcu-post__title:after {
   content: none;
 }
-
 .pgcu-post__title a {
   font-size: var(--pgcu-titleFontSize);
   color: var(--pgcu-titleColor) !important;
@@ -471,7 +430,6 @@
   border: 0 none !important;
   line-height: inherit;
 }
-
 .pgcu-post__title a:hover {
   color: var(--pgcu-titleColorHover) !important;
 }
@@ -485,13 +443,11 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
 .pgcu-post__meta li {
   list-style-type: none;
   margin: 0 !important;
   padding: 0 11px !important;
 }
-
 .pgcu-post__meta li a {
   text-decoration: none !important;
   font-size: 14px;
@@ -499,15 +455,12 @@
   display: block;
   transition: 0.3s ease;
 }
-
 .pgcu-post__meta li a:hover {
   color: var(--pgcu-metaColorHover) !important;
 }
-
 .pgcu-post__meta--dots li:not(:last-child) {
   position: relative;
 }
-
 .pgcu-post__meta--dots li:not(:last-child):after {
   content: "";
   position: absolute;
@@ -519,38 +472,31 @@
   border-radius: 50%;
   background: var(--pgcu-textLight);
 }
-
 .pgcu-post__meta--has-icon {
   margin: 0 -10px !important;
   position: relative;
 }
-
 .pgcu-post__meta--has-icon li {
   padding: 0 10px;
 }
-
 .pgcu-post__meta--has-icon li span {
   font-size: 14px;
   color: var(--pgcu-metaColor) !important;
   display: block;
 }
-
 .pgcu-post__meta--has-icon li div {
   display: flex;
   align-items: center;
 }
-
 .pgcu-post__meta--has-icon li svg {
   width: 14px;
   height: 14px;
   fill: var(--pgcu-metaColor) !important;
   margin-right: 8px;
 }
-
 .pgcu-post__meta__share {
   position: relative;
 }
-
 .pgcu-post__meta__share__dropdown {
   position: absolute;
   width: 130px;
@@ -567,7 +513,6 @@
   transition: 0.3s ease;
   z-index: 2;
 }
-
 .pgcu-post__meta__share__dropdown a {
   display: block;
   margin: 0 7px;
@@ -576,15 +521,12 @@
   flex: none;
   line-height: 1;
 }
-
 .pgcu-post__meta__share__dropdown a svg {
   margin-right: 0;
 }
-
 .pgcu-post__meta__share__dropdown a:hover svg {
   fill: var(--pgcu-metaColorHover) !important;
 }
-
 .pgcu-post__meta__share:before {
   content: "";
   width: 100%;
@@ -593,64 +535,52 @@
   left: 0;
   bottom: -12px;
 }
-
 .pgcu-post__meta__share:hover {
   cursor: pointer;
 }
-
 .pgcu-post__meta__share:hover .pgcu-post__meta__share__icon svg {
   fill: var(--pgcu-metaColorHover) !important;
 }
-
 .pgcu-post__meta__share:hover .pgcu-post__meta__share__icon span {
   color: var(--pgcu-metaColorHover) !important;
 }
-
 .pgcu-post__meta__share:hover .pgcu-post__meta__share__dropdown {
   top: 26px;
   visibility: visible;
   opacity: 1;
   pointer-events: all;
 }
-
 .pgcu-post__meta__categories {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: -3px !important;
 }
-
 .pgcu-post__meta__categories > a {
   margin: 3px;
   text-decoration: none !important;
 }
-
 .pgcu-post__meta__categories > a:first-child:after {
-  content: ',';
+  content: ",";
 }
-
 .pgcu-post__meta__categories > a:last-child:after {
   content: none;
 }
-
 .pgcu-post__meta__categories-more {
   line-height: 0.5;
   position: relative;
 }
-
 .pgcu-post__meta__categories-more span {
   display: block;
   margin-left: 4px;
   cursor: pointer;
 }
-
 .pgcu-post__meta__categories-more span svg {
   width: 9px;
   height: 9px;
   fill: var(--pgcu-textLight);
   transition: 0.3s ease;
 }
-
 .pgcu-post__meta__categories-more div {
   visibility: hidden;
   opacity: 0;
@@ -665,17 +595,15 @@
   transition: 0.3s ease;
   min-width: 100px;
 }
-
 .pgcu-post__meta__categories-more div:before {
   position: absolute;
-  content: '';
+  content: "";
   border-right: 7px solid transparent;
   border-left: 7px solid transparent;
   border-top: 9px solid #fff;
   right: 10px;
   bottom: -9px;
 }
-
 .pgcu-post__meta__categories-more div:after {
   content: "";
   position: absolute;
@@ -685,21 +613,17 @@
   bottom: -13px;
   background: transparent;
 }
-
 .pgcu-post__meta__categories-more div a {
   display: block;
   line-height: 1;
   text-decoration: none !important;
 }
-
 .pgcu-post__meta__categories-more div a:not(:last-child) {
   margin-bottom: 5px;
 }
-
 .pgcu-post__meta__categories-more:hover span svg {
   fill: var(--pgcu-primaryColor);
 }
-
 .pgcu-post__meta__categories-more:hover span + div {
   visibility: visible;
   opacity: 1;
@@ -729,25 +653,20 @@
   transition: 0.3s ease;
   line-height: 1;
 }
-
 .pgcu-button:hover {
   background: var(--pgcu-buttonBgHover) !important;
   color: var(--pgcu-buttonColorHover) !important;
 }
-
 .pgcu-button--rounded {
   border-radius: 4px;
 }
-
 .pgcu-button--loading {
   position: relative;
 }
-
 .pgcu-button--loading:after {
   content: "";
   position: absolute;
 }
-
 .pgcu-button--active {
   background: var(--pgcu-buttonBgHover) !important;
   color: var(--pgcu-buttonColorHover) !important;
@@ -763,7 +682,6 @@
   text-decoration: none;
   transition: 0.3s ease;
 }
-
 .pgcu-post__readmore svg {
   width: 11px;
   height: 13px;
@@ -773,12 +691,10 @@
   transition: 0.3s ease;
   fill: var(--pgcu-readMoreColor);
 }
-
 .pgcu-post__readmore:hover {
   color: var(--pgcu-readMoreColorHover) !important;
   text-decoration: underline !important;
 }
-
 .pgcu-post__readmore:hover svg {
   margin-left: 7px;
   visibility: visible;
@@ -882,7 +798,6 @@
     display: block;
   }
 }
-
 /*===========================
  Pagination styles
 ===========================*/
@@ -927,11 +842,9 @@
   border-radius: 4px !important;
   transition: 0.3s ease;
 }
-
 .pgcu-pagination .pagination .nav-links .page-numbers:before, .pgcu-pagination .pagination .nav-links .page-numbers:after {
   content: none;
 }
-
 .pgcu-pagination .pagination .nav-links .page-numbers.prev, .pgcu-pagination .pagination .nav-links .page-numbers.next {
   position: static;
 }
@@ -965,15 +878,12 @@
 .pgcu-theme-1 .pgcu-post__title {
   margin-bottom: 12px !important;
 }
-
 .pgcu-theme-1 .pgcu-post__meta {
   margin-bottom: 16px !important;
 }
-
 .pgcu-theme-1 .pgcu-post__excerpt {
   margin-bottom: 14px !important;
 }
-
 .pgcu-theme-1 .pgcu-post__details {
   padding: 20px;
 }
@@ -984,11 +894,9 @@
 .pgcu-theme-2 .pgcu-post__title {
   margin-bottom: 12px !important;
 }
-
 .pgcu-theme-2 .pgcu-post__excerpt {
   margin-bottom: 20px !important;
 }
-
 .pgcu-theme-2 .pgcu-post__details {
   padding: 20px;
 }
@@ -1000,11 +908,9 @@
   margin-top: 10px !important;
   margin-bottom: 12px !important;
 }
-
 .pgcu-theme-3 .pgcu-post__excerpt {
   margin-bottom: 20px !important;
 }
-
 .pgcu-theme-3 .pgcu-post__details {
   padding: 20px;
 }
@@ -1015,22 +921,20 @@
 .pgcu-theme-4 {
   padding-bottom: 45px;
 }
-
 .pgcu-theme-4 .pgcu-post__title {
   margin-top: 10px !important;
   margin-bottom: 12px !important;
 }
-
 .pgcu-theme-4 .pgcu-post__excerpt {
   margin-bottom: 20px !important;
 }
-
 .pgcu-theme-4 .pgcu-post__details {
   padding: 20px;
   transition: 0.3s ease;
 }
-
 .pgcu-theme-4 .pgcu-post__content:hover .pgcu-post__details {
   border-color: transparent;
   box-shadow: 0 5px 20px rgba(162, 164, 193, 0.2);
 }
+
+/*# sourceMappingURL=style.css.map */

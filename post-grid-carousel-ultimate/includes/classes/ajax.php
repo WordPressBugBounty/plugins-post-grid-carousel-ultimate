@@ -57,7 +57,7 @@ class PGCU_Ajax
 
         $layout             = ! empty( $layout ) ? sanitize_text_field( $layout ) : 'carousel';
         $allowed_themes     = ['theme-1', 'theme-2', 'theme-3', 'theme-3'];                            // Define allowed themes
-        $theme              = in_array($theme, $allowed_themes) ? $theme : 'theme-1';
+        $theme              = isset( $theme ) && in_array( $theme, $allowed_themes, true ) ? sanitize_text_field( $theme ) : 'theme-1';
         $post_type          = ! empty( $post_type ) ? sanitize_text_field( $post_type ) : 'post';
         $term_from          = ! empty( $term_from ) ? sanitize_text_field( $term_from ) : 'category';
         $display_term       = ! empty( $display_term ) ? sanitize_text_field( $display_term ) : 'yes';
