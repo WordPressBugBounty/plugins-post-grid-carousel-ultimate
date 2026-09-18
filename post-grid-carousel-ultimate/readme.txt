@@ -3,7 +3,7 @@ Contributors: wpwax
 Tags: post grid, post carousel, post slider, post view, post list
 Requires at least: 4.0
 Tested up to: 6.9
-Stable tag: 1.8
+Stable tag: 1.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -150,6 +150,8 @@ Post Grid and Carousel Ultimate plugin is very easy to use. Just follow the foll
 
 == Changelog ==
 
+= 1.8.1 =
+* Fix: Stored XSS in the shortcode settings metabox (Header Title, Total Posts, Image Width fields were not escaped on output) - reported by Yaswanth Reddy Sunkara via WPScan/Jetpack
 = 1.8 =
 * Add: WordPress 6.9 compatibility
 * Code cleanup

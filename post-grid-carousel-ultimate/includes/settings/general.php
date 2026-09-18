@@ -91,8 +91,7 @@ $post_from 		      = ! empty( $post_from ) ? $post_from : 'latest';
             <tr>
                 <th><label for="gc[total_posts]"><?php esc_html_e('Total Posts', PGCU_TEXTDOMAIN); ?></label></th>
                 <td>
-                    <input type='number' class="cmb2-text-medium" id="gc[total_posts]" name="gc[total_posts]" value="<?php if(empty($total_posts)) {echo '12';
-                    }else{ echo $total_posts;}?>"/>
+                    <input type='number' class="cmb2-text-medium" id="gc[total_posts]" name="gc[total_posts]" value="<?php echo esc_attr( ! empty( $total_posts ) ? $total_posts : '12' ); ?>"/>
 
                 </td>
             </tr>
@@ -136,7 +135,7 @@ $post_from 		      = ! empty( $post_from ) ? $post_from : 'latest';
             <tr class='pgcu_header_title'>
                 <th><label for="gc[header_title]"><?php esc_html_e('Header Title', PGCU_TEXTDOMAIN); ?></label></th>
                 <td>
-                    <input type='text' class="cmb2-text-medium" id="gc[header_title]" name="gc[header_title]" value="<?php echo ! empty( $header_title ) ? $header_title : ''; ?>"/>
+                    <input type='text' class="cmb2-text-medium" id="gc[header_title]" name="gc[header_title]" value="<?php echo esc_attr( ! empty( $header_title ) ? $header_title : '' ); ?>"/>
 
                 </td>
             </tr>
@@ -294,8 +293,7 @@ $post_from 		      = ! empty( $post_from ) ? $post_from : 'latest';
             <tr>
                 <th><label for="gc[image_width]"><?php esc_html_e('Image Width', PGCU_TEXTDOMAIN); ?></label></th>
                 <td>
-                    <input type='number' class="cmb2-text-medium" id="gc[image_width]" name="gc[image_width]" value="<?php if(empty($image_width)) {echo '300';
-                    }else{ echo $image_width;}?>"/>
+                    <input type='number' class="cmb2-text-medium" id="gc[image_width]" name="gc[image_width]" value="<?php echo esc_attr( ! empty( $image_width ) ? $image_width : '300' ); ?>"/>
                     <p class="description"><?php esc_html_e('Image cropping width.', PGCU_TEXTDOMAIN); ?></p>
                 </td>
             </tr>
